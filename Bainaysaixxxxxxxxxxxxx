@@ -21,7 +21,7 @@ int main() {
         printf("Email: ");
         scanf("%s\n", email[i]);
     }
-    printf("\nDanh sách sinh viên:\n");
+    printf("\nDanh sÃ¡ch sinh viÃªn:\n");
     printf("STT\Ho va ten\Age\So dien thoai\Email\n");
     for (int i = 0; i < 10; i++) {
     	
