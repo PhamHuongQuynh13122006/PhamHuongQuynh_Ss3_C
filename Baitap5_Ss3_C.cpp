@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+	
+	// trong danh sach tren luu toi da 10 sinh vien
+	// khai bao bien , thu tu toi da , do dai cua ki tu 
+	
+    char name[10][100], phone[10][14], email[10][60];
+    int Age[10][2];
+    
+    //dung vong lap de thuc hien nhap ttin vao danh sach
+    
+    for (int i = 0; i < 10; i++) {
+        printf("\nNhap thong tin sinh vien %d:\n", i + 1);
+        printf("Ho va ten: ");
+        scanf(" %s\n", name[i]);
+        printf("Age: ");
+        scanf("%d\n", &age[i]);
+        printf("So dien thoai: ");
+        scanf("%s\n", phone[i]);
+        printf("Email: ");
+        scanf("%s\n", email[i]);
+    }
+    printf("\nDanh sách sinh viên:\n");
+    printf("STT\Ho va ten\Age\So dien thoai\Email\n");
+    for (int i = 0; i < 10; i++) {
+    	
+   	// Buoc cuoi nhap xuat danh sach va de cho cac cot cach nhau 1 khoang
+   	
+        printf("%d\t%s\t%d\t%s\t%s\n", i + 1, name[i], age[i], phone[i], email[i]);
+    }
+
+    return 0;
+}
+
+
